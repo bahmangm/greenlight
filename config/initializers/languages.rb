@@ -10,10 +10,11 @@ locales.each do |loc|
 end
 
 Rails.configuration.i18n.available_locales = configured_languages
+# Rails.configuration.i18n.available_locales = [:fa_IR]
 
 # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
 # the I18n.default_locale when a translation cannot be found).
 Rails.configuration.i18n.fallbacks = {}
 Rails.configuration.i18n.available_locales.each do |locale|
-  Rails.configuration.i18n.fallbacks[locale] = :en
+  Rails.configuration.i18n.fallbacks[locale] = :fa_IR
 end
