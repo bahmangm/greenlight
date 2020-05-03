@@ -261,7 +261,7 @@ en:
       start: Start searching...
   landing:
     about: "%{href} is a simple front-end for your Sima open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to Sima.vet.salary.ir.
+    welcome: Welcome to Sima.vet.salary.ir
     video: Watch our tutorial on using sima.vetsalary.ir
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of sima.vetsalary.ir, but your database isn't compatible.
