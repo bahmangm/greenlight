@@ -13,6 +13,19 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
+<div class="background">
+  <div class="container pt-9 pb-8">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center">
+        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://sima.vetsalary.ir/b/", target: "_blank", rel: "noopener")).html_safe %></p>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <% valid_access_code = @room.access_code.nil? || @room.access_code.empty? || @room.access_code == session[:access_code] %>
 <%= render 'rooms/components/room_event', render_recordings: valid_access_code do %>
   <% if room_authentication_required %>
