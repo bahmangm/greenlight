@@ -10,7 +10,7 @@ services:
     ports:
       - 127.0.0.1:5000:80
     extra_hosts:
-      - "sima.vetsalary.ir:192.168.1.9"
+      - "sima.vetsalary.ir:192.168.0.15"
 # When using external logging
 #    logging:
 #      driver: $LOG_DRIVER
